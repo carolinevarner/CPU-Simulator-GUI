@@ -74,5 +74,44 @@ namespace CpuSchedulingWinForms
         {
 
         }
+
+        private void HRRN_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.HRRNAlgorithm(txtProcess.Text);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes ", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+
+        private void MLFQ_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.MLFQAlgorithm(txtProcess.Text);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes ", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+
+        private void SRTF_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.SRTFAlgorithm(txtProcess.Text);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes ", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
     }
 }

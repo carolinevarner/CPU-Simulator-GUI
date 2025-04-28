@@ -49,6 +49,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cpuSchedulerTab = new System.Windows.Forms.TabPage();
+            this.HRRN = new System.Windows.Forms.Button();
+            this.MLFQ = new System.Windows.Forms.Button();
             this.btnRoundRobin = new System.Windows.Forms.Button();
             this.restartApp = new System.Windows.Forms.Label();
             this.btnPriority = new System.Windows.Forms.Button();
@@ -63,6 +65,7 @@
             this.pictureBoxCodeOutput = new System.Windows.Forms.PictureBox();
             this.btnBarcode = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.SRTF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabSelection.SuspendLayout();
@@ -313,6 +316,9 @@
             this.cpuSchedulerTab.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.cpuSchedulerTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cpuSchedulerTab.BackgroundImage")));
             this.cpuSchedulerTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cpuSchedulerTab.Controls.Add(this.SRTF);
+            this.cpuSchedulerTab.Controls.Add(this.HRRN);
+            this.cpuSchedulerTab.Controls.Add(this.MLFQ);
             this.cpuSchedulerTab.Controls.Add(this.btnRoundRobin);
             this.cpuSchedulerTab.Controls.Add(this.restartApp);
             this.cpuSchedulerTab.Controls.Add(this.btnPriority);
@@ -328,6 +334,44 @@
             this.cpuSchedulerTab.TabIndex = 1;
             this.cpuSchedulerTab.Text = "CPU Scheduler";
             // 
+            // HRRN
+            // 
+            this.HRRN.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.HRRN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HRRN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.HRRN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HRRN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HRRN.Image = ((System.Drawing.Image)(resources.GetObject("HRRN.Image")));
+            this.HRRN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HRRN.Location = new System.Drawing.Point(16, 329);
+            this.HRRN.Name = "HRRN";
+            this.HRRN.Size = new System.Drawing.Size(161, 45);
+            this.HRRN.TabIndex = 14;
+            this.HRRN.Text = "Highest Response Ratio Next";
+            this.HRRN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HRRN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.HRRN.UseVisualStyleBackColor = false;
+            this.HRRN.Click += new System.EventHandler(this.HRRN_Click);
+            // 
+            // MLFQ
+            // 
+            this.MLFQ.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.MLFQ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MLFQ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.MLFQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MLFQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MLFQ.Image = ((System.Drawing.Image)(resources.GetObject("MLFQ.Image")));
+            this.MLFQ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MLFQ.Location = new System.Drawing.Point(252, 278);
+            this.MLFQ.Name = "MLFQ";
+            this.MLFQ.Size = new System.Drawing.Size(151, 45);
+            this.MLFQ.TabIndex = 13;
+            this.MLFQ.Text = "Multi-Level FeedBack Queue";
+            this.MLFQ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MLFQ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MLFQ.UseVisualStyleBackColor = false;
+            this.MLFQ.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // btnRoundRobin
             // 
             this.btnRoundRobin.BackColor = System.Drawing.Color.PapayaWhip;
@@ -337,7 +381,7 @@
             this.btnRoundRobin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoundRobin.Image = ((System.Drawing.Image)(resources.GetObject("btnRoundRobin.Image")));
             this.btnRoundRobin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoundRobin.Location = new System.Drawing.Point(247, 278);
+            this.btnRoundRobin.Location = new System.Drawing.Point(16, 176);
             this.btnRoundRobin.Name = "btnRoundRobin";
             this.btnRoundRobin.Size = new System.Drawing.Size(85, 45);
             this.btnRoundRobin.TabIndex = 12;
@@ -369,7 +413,7 @@
             this.btnPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPriority.Image = ((System.Drawing.Image)(resources.GetObject("btnPriority.Image")));
             this.btnPriority.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPriority.Location = new System.Drawing.Point(347, 278);
+            this.btnPriority.Location = new System.Drawing.Point(139, 278);
             this.btnPriority.Name = "btnPriority";
             this.btnPriority.Size = new System.Drawing.Size(107, 45);
             this.btnPriority.TabIndex = 10;
@@ -388,7 +432,7 @@
             this.btnSJF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSJF.Image = ((System.Drawing.Image)(resources.GetObject("btnSJF.Image")));
             this.btnSJF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSJF.Location = new System.Drawing.Point(115, 278);
+            this.btnSJF.Location = new System.Drawing.Point(16, 278);
             this.btnSJF.Name = "btnSJF";
             this.btnSJF.Size = new System.Drawing.Size(117, 45);
             this.btnSJF.TabIndex = 9;
@@ -407,7 +451,7 @@
             this.btnFCFS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFCFS.Image = ((System.Drawing.Image)(resources.GetObject("btnFCFS.Image")));
             this.btnFCFS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFCFS.Location = new System.Drawing.Point(16, 278);
+            this.btnFCFS.Location = new System.Drawing.Point(16, 227);
             this.btnFCFS.Name = "btnFCFS";
             this.btnFCFS.Size = new System.Drawing.Size(84, 45);
             this.btnFCFS.TabIndex = 8;
@@ -521,6 +565,25 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // SRTF
+            // 
+            this.SRTF.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.SRTF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SRTF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.SRTF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SRTF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRTF.Image = ((System.Drawing.Image)(resources.GetObject("SRTF.Image")));
+            this.SRTF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SRTF.Location = new System.Drawing.Point(183, 329);
+            this.SRTF.Name = "SRTF";
+            this.SRTF.Size = new System.Drawing.Size(171, 45);
+            this.SRTF.TabIndex = 15;
+            this.SRTF.Text = "Shortest Remaining Time First";
+            this.SRTF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SRTF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SRTF.UseVisualStyleBackColor = false;
+            this.SRTF.Click += new System.EventHandler(this.SRTF_Click);
+            // 
             // CpuScheduler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,5 +650,8 @@
         private System.Windows.Forms.Button btnRoundRobin;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button MLFQ;
+        private System.Windows.Forms.Button HRRN;
+        private System.Windows.Forms.Button SRTF;
     }
 }
