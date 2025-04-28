@@ -28,10 +28,10 @@ The project was originally forked from the starter code created by Francis Nweke
 ## Project Instructions
 
 ### Introduction
-As part of your role at OwlTech Systems, a hypothetical company specializing in operating system optimization, you have been tasked with evaluating different CPU scheduling algorithms.  
+As part of my Project 2 for Operating Systems, I simulated having a role at OwlTech Systems, a hypothetical company specializing in operating system optimization, and was tasked with evaluating different CPU scheduling algorithms.  
 The company is concerned with **performance efficiency**, **fairness**, and **responsiveness** in process scheduling.
 
-Your responsibilities included:
+My responsibilities included:
 - Analyzing the existing starter CPU scheduling simulator.
 - Implementing new CPU scheduling algorithms beyond the basic ones provided.
 - Measuring key performance metrics: average waiting time, turnaround time, and response time.
@@ -99,3 +99,9 @@ The extended project now supports **7 CPU scheduling algorithms**:
    ```bash
    git clone https://github.com/carolinevarner/CPU-Simulator-GUI.git
 
+## **Contributors**  
+- Francis Nweke (Starter Code)
+- Caroline Varner
+- Course: CS 3502 - Operating Systems 
+- Instructor: Chris Regan
+- University: Kennesaw State University
