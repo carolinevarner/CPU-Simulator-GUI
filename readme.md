@@ -21,7 +21,7 @@ This project is licensed under the terms of the [MIT license](https://choosealic
 
 This project is developed as part of CS 3502 - Operating Systems at Kennesaw State University.  
 It simulates various CPU scheduling algorithms through a Windows Forms application.  
-The project was originally forked from the starter code provided by OwlTech Systems and has been **extended** by implementing additional algorithms for a complete evaluation.
+The project was originally forked from the starter code created by Francis Nweke and provided by Professor Chris Regan and has been **extended** by implementing additional algorithms for a complete evaluation.
 
 ---
 
