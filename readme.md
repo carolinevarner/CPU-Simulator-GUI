@@ -17,7 +17,7 @@ This project is licensed under the terms of the [MIT license](https://choosealic
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 This project is developed as part of CS 3502 - Operating Systems at Kennesaw State University.  
 It simulates various CPU scheduling algorithms through a Windows Forms application.  
@@ -25,7 +25,7 @@ The project was originally forked from the starter code provided by OwlTech Syst
 
 ---
 
-## 🏢 Project Instructions
+## Project Instructions
 
 ### Introduction
 As part of your role at OwlTech Systems, a hypothetical company specializing in operating system optimization, you have been tasked with evaluating different CPU scheduling algorithms.  
@@ -56,7 +56,7 @@ The original algorithms included:
 
 ---
 
-## 🛠 Features and Changes
+## Features and Changes
 
 The extended project now supports **7 CPU scheduling algorithms**:
 
@@ -72,7 +72,7 @@ The extended project now supports **7 CPU scheduling algorithms**:
 
 ---
 
-## ✏️ Description of My Work
+## Description of My Work
 
 - **Forked** the original starter project into my GitHub account: [carolinevarner/CPU-Simulator-GUI](https://github.com/carolinevarner/CPU-Simulator-GUI).
 - **Cloned** the repository locally using Visual Studio.
@@ -84,7 +84,7 @@ The extended project now supports **7 CPU scheduling algorithms**:
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### Prerequisites
 - Windows OS
