@@ -115,7 +115,8 @@ The extended project now supports **7 CPU scheduling algorithms**:
  - View detailed results through popups and list views.
 
 ## **References**
- - Starter code: FrancisNweke/CPU-Simulator-GUI
+ - Starter code:
+   > https://github.com/FrancisNweke/CPU-Simulator-GUI
  - CS 3502 Project 2: Operating Systems – CPU Scheduler Simulator Instructions
 
 ## **Contributors**  
