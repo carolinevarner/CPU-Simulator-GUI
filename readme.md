@@ -84,6 +84,8 @@ The extended project now supports **7 CPU scheduling algorithms**:
 
 ---
 
+
+
 ## How to Run the Project
 
 ### Prerequisites
@@ -98,6 +100,23 @@ The extended project now supports **7 CPU scheduling algorithms**:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/carolinevarner/CPU-Simulator-GUI.git
+
+2. Open the project in Visual Studio:
+ - Open CpuSchedulingWinForms.sln.
+
+3. Build and run:
+ - Build Solution (Ctrl + Shift + B)
+ - Run (F5)
+
+4. Interact with the application:
+ - Enter the number of processes.
+ - Select an algorithm (including SRTF, MLFQ, HRRN).
+ - Provide arrival and burst times as prompted.
+ - View detailed results through popups and list views.
+
+## **References**
+ - Starter code: FrancisNweke/CPU-Simulator-GUI
+ - CS 3502 Project 2: Operating Systems – CPU Scheduler Simulator Instructions
 
 ## **Contributors**  
 - Francis Nweke (Starter Code)
